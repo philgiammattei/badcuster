@@ -37,15 +37,15 @@ h1 {
 .membergrid {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1000px;
   margin-bottom: 40px;
 }
 
 .memberphoto {
   object-fit: contain;
-  max-width: 220px;
-  max-height: 687px;
+  max-width: 240px;
+  max-height: 320px;
   padding: 10px;
 }
 
