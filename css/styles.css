@@ -46,7 +46,7 @@ h1 {
 .memberphoto {
   object-fit: contain;
   max-width: 20%;
-  max-height: auto;
+  height: auto;
   padding: 10px;
 }
 
