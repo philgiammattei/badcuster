@@ -1,0 +1,65 @@
+body {
+  background-color: #931f1d;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Vollkorn SC', serif;
+  color: #d5ddbc;
+}
+
+a  {
+  color: #8a9b68;
+}
+
+a:visited, a:active, a:hover {
+  color: #937b63;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bigimage {
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.bigimage img {
+  max-width: 90%;
+}
+
+.logo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.membergrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width:100%;
+  margin:auto;
+  margin-bottom: 40px;
+}
+
+.memberphoto {
+  max-width: 20%;
+  padding: 10px;
+}
+
+.shows {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.social {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
+  max-width: 200px;
+  margin: 20px auto 50px;
+}
