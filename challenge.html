@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bad Custer</title>
+  <meta name="description" content="A band from Pittsburgh.  New album out soon.">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+
+</head>
+
+<body>
+
+
+<!--content goes here!-->
+
+<div class="logo">
+  <img id="logo" src="images/badcuster_logo.png" />
+</div>
+
+<h1>CHALLENGE: Play</h1>
+
+<h1 class="challenge" id="challenge-song">SONG</h1>
+
+<h1 class="challenge" id="challenge-time">TIME</h1>
+
+<h1 class="challenge" id="challenge-style">STYLE</h1>
+
+
+
+<!--content ends here!-->
+
+
+<script type="text/javascript">
+let songs = ["Bones Like Lightning",
+              "Andrea",
+              "We Don't Play Rock And Roll",
+              "I'm Doing Good",
+              "Bigger Than You",
+              "Andrea",
+              "I'm Sorry, But I Don't Forget",
+              "Where Does She Go",
+              "Coconut",
+              "Everybody\'s Sayin\'",
+              "Falalala",
+              "Tiny Man",
+              "Lies of the Few",
+              "I Still Love You",
+              "Outlaw Song",
+              "John Woo",
+              "Outside of Texas",
+              "No One Knows",
+              "The Ballad of Jesus Christ",
+              "He Won't Be There",
+              "I Hate Your Stupid Face",
+              "In The Wild",
+              "Someone You Hate",
+              "Kill The Wizard!",
+              "Finger Trap",
+              "I Don't Even Know Her",
+              "Sad Guitar"];
+let times = ["Half Time",
+              "Double Time",
+              "6/8",
+              "Swing eighths",
+              "Slightly Faster",
+              "Slightly Slower",
+              "Normal"];
+let styles = ["Bossa Nova",
+              "Bluegrass",
+              "Disco",
+              "Jazz",
+              "Flamenco",
+              "90s Britpop",
+              "Jam Band",
+              "Sad",
+              "Happy",
+              "Angry",
+              "Vegas Lounge",
+              "Speed Metal",
+              "For Kids",
+              "Hip Hop",
+              "Like the ecstasy song in Garden State",
+              "Old Country",
+              "Blues",
+              "Anthem Rock",
+              "Intimate, vulnerable",
+              "Post Grunge",
+              "Top 40",
+              "New Wave"
+              ];
+
+let songslength = songs.length;
+let timeslength = times.length;
+let styleslength = styles.length;
+
+var songheading = document.getElementById("challenge-song");
+var timeheading = document.getElementById("challenge-time");
+var styleheading = document.getElementById("challenge-style");
+
+songheading.innerHTML = songs[Math.floor(Math.random() * songslength)];
+timeheading.innerHTML = times[Math.floor(Math.random() * timeslength)];
+styleheading.innerHTML = styles[Math.floor(Math.random() * styleslength)];
+
+
+//let slider=document.getElementById("slider");
+//let output=document.getElementById("output");
+//let images = document.getElementsByClassName("sliderimg");
+
+images[0].style.display = "block";
+slider.oninput = function () {
+  for (let i = 0; i < images.length; i++) {
+    if (i == slider.value) {
+      images[i].style.display = "block";
+    } else {
+      images[i].style.display = "none";
+    }
+  }
+  output.innerHTML = "Part " + slider.value;
+}
+</script>
+
+
+<script type="text/javascript">
+function menuToggle() {
+  var menu = document.getElementById("nav");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
+
+</body>
+
+</html>
